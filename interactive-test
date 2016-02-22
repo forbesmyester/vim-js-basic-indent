@@ -1,0 +1,11 @@
+#!/bin/bash
+vim -Nu <(cat << EOF
+filetype off
+set rtp+=~/.vim/plugged/vader.vim
+filetype plugin indent on
+set rtp+=./jsbasicindent.vim
+syntax enable
+set shiftwidth=4
+set expandtab
+set indentexpr=jsbasicindent#JSBasicIndent(v:lnum)
+EOF)

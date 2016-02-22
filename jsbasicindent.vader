@@ -1,0 +1,22 @@
+Do (Copy Prev):
+  ihw();\<Enter>  hw();\<Enter>hw();
+
+Expect():
+  hw();
+    hw();
+    hw();
+
+Do (Skip Comments):
+  ihw();\<Enter>  // hi\<Enter>hw();
+
+Expect():
+  hw();
+    // hi
+  hw();
+
+Do (Indent Continuation):
+  ihw()\<Enter>.then(do);
+
+Expect():
+  hw()
+      .then(do);

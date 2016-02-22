@@ -15,8 +15,9 @@ Expect():
   hw();
 
 Do (Indent Continuation):
-  ihw()\<Enter>.then(do);
+  iif (a) {\<Enter>x();\<Enter>}
 
 Expect():
-  hw()
-      .then(do);
+  if (a) {
+      x();
+  }

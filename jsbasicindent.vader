@@ -15,9 +15,10 @@ Expect():
   hw();
 
 Do (Indent Continuation):
-  iif (a) {\<Enter>x();\<Enter>}
+  ijq\<Enter>.do()\<Enter>.something();\<Enter>no;
 
 Expect():
-  if (a) {
-      x();
-  }
+  jq
+    .do()
+    .something();
+  no;
